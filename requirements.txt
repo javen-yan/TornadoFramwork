@@ -1,0 +1,10 @@
+pymongo
+logzero
+tornado
+requests
+pymysql
+SQLAlchemy
+pyjwt
+elasticsearch
+pycryptodome
+pycrypto
