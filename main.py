@@ -9,7 +9,7 @@ from web.models import create_db
 from web.settings import sys_port
 from web.utils import SmxUtils
 from web.utils.tools import machine_ip
-from web.z_logger import init_logger
+from web.utils.z_logger import init_logger
 
 
 define("t", default=False, help="create table", type=bool)
