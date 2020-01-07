@@ -9,10 +9,9 @@ from web.models import create_db
 from web.settings import sys_port
 from web.utils import SmxUtils
 from web.utils.tools import machine_ip
-from web.views.main import LoginHandler
 from web.z_logger import init_logger
 
-define('runserver', default=False, type=bool)
+
 define("t", default=False, help="create table", type=bool)
 define("key", default=False, help="generate sm key pair", type=bool)
 define("filename", default=None, help="log file", type=str)
@@ -40,18 +39,16 @@ def server():
     init_logger(options.filename, options.level, options.maxSize, options.backupCount)
     if options.t:
         create_db.run()
-
-    if options.runserver:
-        app = make_app(LoginHandler, log_func)
+    elif options.key:
+        status, key = SmxUtils.CreateKeyPair()
+        if status:
+            print(key)
+    else:
+        app = make_app(None, log_func)
         http_Server = HTTPServer(app, max_buffer_size=504857600, max_body_size=504857600)
         http_Server.listen(sys_port)
         logger.info("==listen on port http://%s:%d ==", machine_ip(), sys_port)
         tornado.ioloop.IOLoop.instance().start()
-
-    if options.key:
-        status, key = SmxUtils.CreateKeyPair()
-        if status:
-            print(key)
 
 
 if __name__ == "__main__":

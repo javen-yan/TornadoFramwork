@@ -10,6 +10,8 @@ from __future__ import print_function
 import tornado.web
 from web.settings import *
 from web.urls import urlpatterns
+from web.apps.default.controller import DefaultHandler
+from web.utils.app_route import merge_route
 
 
 def make_app(login_handler, log_func, **settings):
@@ -22,6 +24,11 @@ def make_app(login_handler, log_func, **settings):
     settings['autoreload'] = sys_auto_reload
     settings['jwt_expire'] = sys_jwt_expire
     settings['log_function'] = log_func
+    if sys_login_url:
+        urlpatterns.append((r"{}".format(sys_login_url), login_handler))
+    routes = merge_route(urlpatterns, sys_prefix)
+    routes.append((r'.*?', DefaultHandler))
+    return tornado.web.Application(routes, **settings)
 
-    urlpatterns.append((r"{}".format(sys_login_url), login_handler))
-    return tornado.web.Application(urlpatterns, **settings)
+
+

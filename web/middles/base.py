@@ -1,10 +1,10 @@
 # _*_coding:utf-8_*_
 """
-@ProjectName: TornadoFramwork
+@ProjectName: CrawlKeeper
 @Author:  Javen Yan
-@File: middleware.py
+@File: base.py
 @Software: PyCharm
-@Time :    2019/12/9 上午9:23
+@Time :    2020/1/7 下午3:45
 """
 import importlib
 from abc import ABC

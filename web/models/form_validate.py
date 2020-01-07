@@ -22,16 +22,12 @@ def validate(keys, payloads):
             for k, v in payload.items():
                 if k not in keys:
                     valid_err.append({'status': False, 'msg': '缺少参数{}, 请补全后重试'.format(k)})
-                elif not v:
-                    valid_err.append({'status': False, 'msg': '参数{}不能为空, 请补全后重试'.format(k)})
     else:
         if not payloads:
             valid_err.append({'status': False, 'msg': '参数不能为空'})
         for k, v in payloads.items():
             if k not in keys:
                 valid_err.append({'status': False, 'msg': '缺少参数{}, 请补全后重试'.format(k)})
-            elif not v:
-                valid_err.append({'status': False, 'msg': '参数{}不能为空, 请补全后重试'.format(k)})
     if valid_err:
         return False, valid_err
     else:

@@ -7,31 +7,12 @@
 @Time :    2019/12/5 上午11:08
 """
 from abc import ABC
-import tornado.websocket
 from tornado.escape import json_decode
 from web.models.dbSession import dbSession
 from web.utils import jsondate
-from web.utils.middleware import MiddleHandler
+from web.middles import MiddleHandler
 from web.settings import middleware_list as MIDDLEWARE_LIST
 from web.utils.tools import encrypt_data, aes_tools
-
-
-def make_response(**kwargs):
-    if kwargs['status']:
-        if kwargs.get('data') or kwargs.get('data') == [] or kwargs.get('data') == 0 or kwargs.get('data') == '':
-            return {"code": "0000", "msg": kwargs.get('msg'), "data": kwargs.get('data')}
-        else:
-            return {"code": "0000", "msg": kwargs.get('msg')}
-    else:
-        return {"code": "5000", "msg": kwargs.get('msg')}
-
-
-class BaseNoneWebSocketHandler(tornado.websocket.WebSocketHandler, ABC):
-    """
-        无认证 websocket
-    """
-    def check_origin(self, origin):
-        return True
 
 
 class CorsMiddleware(object):
@@ -104,4 +85,4 @@ class AuthRequestHandler(BaseRequestHandler, ABC):
     """
         认证 Handler
     """
-    middleware_list = MIDDLEWARE_LIST + ['web.views.middles.UserAuthMiddleware']
+    middleware_list = MIDDLEWARE_LIST + ['web.middles.middles.UserAuthMiddleware']

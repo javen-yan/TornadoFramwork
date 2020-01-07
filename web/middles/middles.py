@@ -8,7 +8,7 @@
 """
 from logzero import logger
 from web.libs.auth.auth_libs import decode_jwt
-from web.utils.middleware import Middleware
+from web.middles.base import Middleware
 from web.utils.tools import decrypt_data
 
 
@@ -16,6 +16,7 @@ class UserAuthMiddleware(Middleware):
     """
         用户认证中间件
     """
+
     def process_request(self):
         logger.debug("用户认证中间件， 认证中...")
         auth_content = self.request.headers.get('Authorization', '')
@@ -31,7 +32,7 @@ class UserAuthMiddleware(Middleware):
                     self.set_status(403)
                     self.finish(kw)
         else:
-            kw = {"code": 5000, "msg":"Not Found Authorization in Headers"}
+            kw = {"code": 5000, "msg": "Not Found Authorization in Headers"}
             self.set_status(403)
             self.finish(kw)
 
@@ -43,6 +44,7 @@ class EncryptMiddleware(Middleware):
     """
         数据加密中间件
     """
+
     def process_request(self):
         logger.debug("加密中间件 数据过滤中...")
         self.request.body = decrypt_data(self.request.body)
@@ -55,9 +57,9 @@ class AesEncryptMiddleware(Middleware):
     """
         AES数据加密中间件
     """
+
     def process_request(self):
         logger.debug("AES加密中间件 数据过滤中...")
 
     def process_response(self):
         logger.debug("AES加密中间件 数据过滤结束...")
-
