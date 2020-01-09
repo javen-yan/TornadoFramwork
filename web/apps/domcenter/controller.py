@@ -14,5 +14,10 @@ from web.apps.default.base import BaseRequestHandler
 class HelloDom(BaseRequestHandler, ABC):
 
     def get(self):
-
         return self.write("hello dom-center")
+
+
+class DomesTestHandler(BaseRequestHandler, ABC):
+
+    async def post(self):
+        payloads = self.get_payload()

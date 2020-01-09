@@ -20,8 +20,8 @@ urlpatterns = [
     (r'/uploader$', FileServerHandler),
     (r"/uploads/(.*)", UploadItemHandler, dict(path=os.path.join(os.getcwd(), 'uploads')))
 ]
-urlpatterns += merge_route(users, '/user-center')
-urlpatterns += merge_route(tasks, '/task-center')
-urlpatterns += merge_route(domes, '/dom-center')
-urlpatterns += merge_route(runners, '/runner-center')
-urlpatterns += merge_route(nodes, '/node-center')
+urlpatterns += merge_route(users, '/users')
+urlpatterns += merge_route(tasks, '/tasks')
+urlpatterns += merge_route(domes, '/domes')
+urlpatterns += merge_route(runners, '/runners')
+urlpatterns += merge_route(nodes, '/nodes')

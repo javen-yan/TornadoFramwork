@@ -7,6 +7,8 @@
 @Time :    2019/12/5 上午10:48
 """
 from sqlalchemy import Column, Integer, String, Boolean, DateTime
+
+from web.apps.default.thirdapi.scrapyd_api import ScarpedApi
 from web.models.dbSession import ModelBase, dbSession
 from uuid import uuid4
 from datetime import datetime
@@ -98,3 +100,43 @@ class AccountModel(ModelBase):
             'updated_at': self._updated_at
         }
 
+
+class NodeServerModel(ModelBase):
+    __tablename__ = "servers"
+    id = Column(Integer, autoincrement=True, primary_key=True, nullable=False)
+    uuid = Column(String(64), default=str(uuid4()))
+    server_name = Column(String(64), comment="服务名称")
+    server_url = Column(String(128), comment="服务地址")
+    created_at = Column(DateTime, default=datetime.now, comment='创建时间')
+
+    @classmethod
+    def by_id(cls, kid):
+        return dbSession.query(cls).filter_by(id=kid).first()
+
+    @classmethod
+    def all(cls):
+        return dbSession.query(cls).order_by(-cls.created_at).all()
+
+    @classmethod
+    def by_uuid(cls, uuid):
+        return dbSession.query(cls).filter_by(uuid=uuid).first()
+
+    @classmethod
+    def by_name(cls, name):
+        return dbSession.query(cls).filter_by(server_name=name).first()
+
+    @classmethod
+    def by_url(cls, url):
+        return dbSession.query(cls).filter_by(server_url=url).first()
+
+    @property
+    def _created_at(self):
+        return self.created_at.strftime("%Y-%m-%d %H:%M:%S")
+
+    def to_dict(self):
+        return {
+            'uuid': self.uuid,
+            'server_name': self.server_name,
+            'server_url': self.server_url,
+            'created_at': self._created_at
+        }

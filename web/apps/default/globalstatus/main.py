@@ -17,6 +17,8 @@ class StatusCode(IntEnum):
     params_error = 10005  # 参数不合法
     request_method_error = 10006  # 请求方式不正确
     route_error = 10007  # 请求路径不正确
+    exist_error = 10008  # 已存在
+    not_found_error = 10009  # 不存在
 
 
 class UserCenterStatusCode(StatusCode, IntEnum):
