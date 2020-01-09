@@ -6,9 +6,11 @@
 @Software: PyCharm
 @Time :    2020/1/7 下午4:05
 """
-from web.apps.usercenter.controller import HelloUser
+from web.apps.usercenter.controller import LoginHandler, RegisterHandler, ProfileHandler
 
 urls = [
-    (r'/hello', HelloUser)
+    (r'/login', LoginHandler),
+    (r'/register', RegisterHandler),
+    (r'/profile', ProfileHandler),
 ]
 

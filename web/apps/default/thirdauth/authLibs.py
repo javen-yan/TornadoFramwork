@@ -2,7 +2,7 @@
 """
 @ProjectName: TornadoFramwork
 @Author:  Javen Yan
-@File: auth_libs.py
+@File: authLibs.py
 @Software: PyCharm
 @Time :    2019/12/5 上午11:38
 """
@@ -11,7 +11,6 @@ from uuid import uuid4
 import jwt
 from jwt import ExpiredSignatureError
 from web.settings import *
-from logzero import logger
 
 
 def auth_login(self, **kwargs):

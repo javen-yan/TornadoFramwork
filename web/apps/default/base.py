@@ -10,7 +10,7 @@ from abc import ABC
 from tornado.escape import json_decode
 from web.models.dbSession import dbSession
 from web.utils import jsondate
-from web.middles import MiddleHandler
+from web.middles import MiddleHandler, UserCenterStatusCode
 from web.settings import middleware_list as MIDDLEWARE_LIST
 from web.utils.tools import encrypt_data, aes_tools
 
@@ -44,6 +44,41 @@ class BaseRequestHandler(CorsMiddleware, MiddleHandler, ABC):
         self.set_header("Content-Type", "application/json; charset=utf-8")
         content = jsondate.dumps(data)
         self.write(content)
+
+    def get(self):
+        response = dict()
+        response['code'] = UserCenterStatusCode.request_method_error.value
+        response['message'] = "not support GET method"
+        self.set_status(404)
+        self.write_json(response)
+
+    def post(self):
+        response = dict()
+        response['code'] = UserCenterStatusCode.request_method_error.value
+        response['message'] = "not support POST method"
+        self.set_status(404)
+        self.write_json(response)
+
+    def put(self):
+        response = dict()
+        response['code'] = UserCenterStatusCode.request_method_error.value
+        response['message'] = "not support PUT method"
+        self.set_status(404)
+        self.write_json(response)
+
+    def delete(self):
+        response = dict()
+        response['code'] = UserCenterStatusCode.request_method_error.value
+        response['message'] = "not support DELETE method"
+        self.set_status(404)
+        self.write_json(response)
+
+    def patch(self):
+        response = dict()
+        response['code'] = UserCenterStatusCode.request_method_error.value
+        response['message'] = "not support PATCH method"
+        self.set_status(404)
+        self.write_json(response)
 
     def write_sm_data(self, data):
         """

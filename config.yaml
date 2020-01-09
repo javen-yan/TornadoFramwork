@@ -1,12 +1,12 @@
 system:
   debug: True
   secret: RZ1PcBzqbfQ9fkVqXWLiS4ZyeXihVYIN
-  prefix:
+  prefix: /api/v1
   port: 8090
   login_url:
-  static:
+  static: uploads
   templates:
-  static_url_prefix:
+  static_url_prefix: /api/v1/uploads/
   xsrf_cookies: True
   auto_reload: True
   jwt_expire: 7*24*3600
@@ -18,8 +18,8 @@ system:
 middleware:
 
 database:
-  hostname:
-  port:
-  database:
-  username:
-  password:
+  hostname: 172.22.16.146
+  port: 3306
+  database: crawlkeeper
+  username: root
+  password: "!QAZse4@W3a?"

@@ -7,7 +7,8 @@
 @Time :    2019/12/9 上午9:50
 """
 from logzero import logger
-from web.libs.auth.auth_libs import decode_jwt
+from web.apps.default.globalstatus import UserCenterStatusCode
+from web.apps.usercenter.libs.account import decode_jwt
 from web.middles.base import Middleware
 from web.utils.tools import decrypt_data
 
@@ -28,11 +29,11 @@ class UserAuthMiddleware(Middleware):
                 if res['status']:
                     self.current_user = res['data']
                 else:
-                    kw = {"code": 5000, "msg": res['msg']}
+                    kw = {"code": res['code'], "msg": res['msg']}
                     self.set_status(403)
                     self.finish(kw)
         else:
-            kw = {"code": 5000, "msg": "Not Found Authorization in Headers"}
+            kw = {"code": UserCenterStatusCode.miss_token_error.value, "msg": "Token 缺失"}
             self.set_status(403)
             self.finish(kw)
 
