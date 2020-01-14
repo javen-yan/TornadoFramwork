@@ -49,7 +49,9 @@ def login(self, name, password):
             'expired': time.time() + sys_jwt_expire
         }
         token = gen_token(payload)
-        return {'status': True, 'msg': '登录成功', 'code': UserCenterStatusCode.success.value, 'data': {"token": token}}
+        info = user.to_dict()
+        info['token'] = token
+        return {'status': True, 'msg': '登录成功', 'code': UserCenterStatusCode.success.value, 'data': info}
     return {'status': False, 'msg': '用户名输入错误或者密码不正确', 'code': UserCenterStatusCode.account_error.value}
 
 

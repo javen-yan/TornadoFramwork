@@ -9,7 +9,8 @@
 from abc import ABC
 
 from web.apps.default.base import BaseRequestHandler
-from web.apps.nodecenter.libs.nodes import get_servers, add_node_server, delete_server
+from web.apps.nodecenter.libs.nodes import get_servers, add_node_server, delete_server, get_server_status, \
+    get_node_projects, get_node_project_spiders, get_node_project_jobs
 
 
 class NodesHandler(BaseRequestHandler, ABC):
@@ -40,4 +41,58 @@ class NodesHandler(BaseRequestHandler, ABC):
         result = await delete_server(self, uuid)
         response['code'] = result['code']
         response['message'] = result['msg']
+        return self.write_json(response)
+
+
+class NodesStatusHandler(BaseRequestHandler, ABC):
+
+    async def get(self):
+        response = dict()
+        uuid = self.get_argument('uuid', None)
+        result = await get_server_status(self, uuid)
+        response['code'] = result['code']
+        response['message'] = result['msg']
+        if result['status'] and result.get('data'):
+            response['data'] = result.get('data')
+        return self.write_json(response)
+
+
+class NodeProjectHandler(BaseRequestHandler, ABC):
+
+    async def get(self):
+        response = dict()
+        uuid = self.get_argument('uuid', None)
+        result = await get_node_projects(self, uuid)
+        response['code'] = result['code']
+        response['message'] = result['msg']
+        if result['status'] and result.get('data'):
+            response['data'] = result.get('data')
+        return self.write_json(response)
+
+
+class NodeProjectSpiderHandler(BaseRequestHandler, ABC):
+
+    async def get(self):
+        response = dict()
+        uuid = self.get_argument('uuid', None)
+        project = self.get_argument('project', None)
+        result = await get_node_project_spiders(self, uuid, project)
+        response['code'] = result['code']
+        response['message'] = result['msg']
+        if result['status'] and result.get('data'):
+            response['data'] = result.get('data')
+        return self.write_json(response)
+
+
+class NodeProjectJobsHandler(BaseRequestHandler, ABC):
+
+    async def get(self):
+        response = dict()
+        uuid = self.get_argument('uuid', None)
+        project = self.get_argument('project', None)
+        result = await get_node_project_jobs(self, uuid, project)
+        response['code'] = result['code']
+        response['message'] = result['msg']
+        if result['status'] and result.get('data'):
+            response['data'] = result.get('data')
         return self.write_json(response)

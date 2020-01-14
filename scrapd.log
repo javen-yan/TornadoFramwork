@@ -1,0 +1,101 @@
+nohup: 忽略输入
+2020-01-11T10:05:49+0800 [-] Loading /disk/.Envs/crawlKeeper/lib/python3.8/site-packages/scrapyd/txapp.py...
+2020-01-11T10:05:50+0800 [-] Scrapyd web console available at http://127.0.0.1:6800/
+2020-01-11T10:05:50+0800 [-] Loaded.
+2020-01-11T10:05:50+0800 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 19.10.0 (/disk/.Envs/crawlKeeper/bin/python3 3.8.1) starting up.
+2020-01-11T10:05:50+0800 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2020-01-11T10:05:50+0800 [-] Site starting on 6800
+2020-01-11T10:05:50+0800 [twisted.web.server.Site#info] Starting factory <twisted.web.server.Site object at 0x7fc19ec29640>
+2020-01-11T10:05:50+0800 [Launcher] Scrapyd 1.2.1 started: max_proc=32, runner='scrapyd.runner'
+2020-01-11T10:05:52+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:05:52 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:06:14+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:06:14 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:10:06+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:10:06 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:12:50+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:12:49 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:13:10+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:13:09 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:13:52+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:13:51 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:20:26+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:20:26 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:21:27+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:21:26 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:22:42+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:22:41 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:24:04+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:24:04 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:27:03+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:27:03 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:30:52+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:30:52 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:32:53+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:32:52 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:33:15+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:33:15 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:34:28+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:34:28 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:35:01+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:35:00 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:35:42+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:35:42 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:36:34+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:36:34 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:36:53+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:36:53 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:37:13+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:37:13 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:38:55+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:38:55 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:39:20+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:39:19 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:39:48+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:39:47 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:40:09+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:40:08 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:40:16+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:40:15 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:40:20+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:40:19 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:40:58+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:40:57 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:41:49+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:41:49 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:43:36+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:43:36 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:02+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:02 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:04+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:04 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:04+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:04 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:04+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:04 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:29+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:29 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:29+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:29 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:29+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:29 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:36+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:35 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:36+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:35 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:36+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:35 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:47+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:47 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:47+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:47 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-httpx/0.10.1"
+2020-01-11T10:46:47+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:46:47 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-httpx/0.10.1"
+2020-01-11T10:47:26+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:47:25 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:47:26+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:47:25 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-httpx/0.10.1"
+2020-01-11T10:47:26+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:47:25 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-httpx/0.10.1"
+2020-01-11T10:47:46+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:47:45 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:47:46+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:47:45 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-httpx/0.10.1"
+2020-01-11T10:47:46+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:47:45 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-httpx/0.10.1"
+2020-01-11T10:52:49+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:52:49 +0000] "GET / HTTP/1.1" 200 704 "http://127.0.0.1:5000/server-vue" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+2020-01-11T10:52:54+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:52:54 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-requests/2.22.0"
+2020-01-11T10:53:02+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:53:01 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-requests/2.22.0"
+2020-01-11T10:53:02+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:53:01 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-requests/2.22.0"
+2020-01-11T10:53:49+0800 [twisted.web.http.HTTPChannel#info] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=44374)
+2020-01-11T10:54:30+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:54:29 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:54:30+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:54:29 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-httpx/0.10.1"
+2020-01-11T10:54:30+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:54:29 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-httpx/0.10.1"
+2020-01-11T10:55:17+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:55:16 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:55:17+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:55:16 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-httpx/0.10.1"
+2020-01-11T10:55:17+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:55:16 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-httpx/0.10.1"
+2020-01-11T10:55:47+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:55:47 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T10:55:47+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:55:47 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-httpx/0.10.1"
+2020-01-11T10:55:47+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:02:55:47 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-httpx/0.10.1"
+2020-01-11T11:00:02+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:03:00:01 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-httpx/0.10.1"
+2020-01-11T11:00:02+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:03:00:01 +0000] "GET /listprojects.json HTTP/1.1" 200 63 "-" "python-httpx/0.10.1"
+2020-01-11T11:00:02+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:03:00:01 +0000] "GET /listversions.json?project=baidu HTTP/1.1" 200 68 "-" "python-httpx/0.10.1"
+2020-01-11T13:29:50+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:05:29:50 +0000] "GET / HTTP/1.1" 200 704 "http://operation.frp.ealine.cn/server-vue" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+2020-01-11T13:29:52+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:05:29:52 +0000] "GET /jobs HTTP/1.1" 200 457 "http://127.0.0.1:6800/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+2020-01-11T13:29:57+0800 [twisted.python.log#info] "127.0.0.1" - - [11/Jan/2020:05:29:56 +0000] "GET /daemonstatus.json HTTP/1.1" 200 83 "-" "python-requests/2.22.0"
+2020-01-11T13:30:52+0800 [twisted.web.http.HTTPChannel#info] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=57542)
+2020-01-11T17:11:05+0800 [-] Received SIGTERM, shutting down.
+2020-01-11T17:11:05+0800 [-] Received SIGTERM, shutting down.
+2020-01-11T17:11:05+0800 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/disk/.Envs/crawlKeeper/lib/python3.8/site-packages/twisted/application/app.py", line 398, in startReactor
+	    runReactorWithLogging(
+	  File "/disk/.Envs/crawlKeeper/lib/python3.8/site-packages/twisted/application/app.py", line 312, in runReactorWithLogging
+	    reactor.run()
+	  File "/disk/.Envs/crawlKeeper/lib/python3.8/site-packages/twisted/internet/base.py", line 1283, in run
+	    self.mainLoop()
+	  File "/disk/.Envs/crawlKeeper/lib/python3.8/site-packages/twisted/internet/base.py", line 1292, in mainLoop
+	    self.runUntilCurrent()
+	--- <exception caught here> ---
+	  File "/disk/.Envs/crawlKeeper/lib/python3.8/site-packages/twisted/internet/base.py", line 886, in runUntilCurrent
+	    f(*a, **kw)
+	  File "/disk/.Envs/crawlKeeper/lib/python3.8/site-packages/twisted/internet/base.py", line 646, in stop
+	    raise error.ReactorNotRunning(
+	twisted.internet.error.ReactorNotRunning: Can't stop reactor that isn't running.
+	
+2020-01-11T17:11:05+0800 [-] (TCP Port 6800 Closed)
+2020-01-11T17:11:05+0800 [twisted.web.server.Site#info] Stopping factory <twisted.web.server.Site object at 0x7fc19ec29640>
+2020-01-11T17:11:05+0800 [-] Main loop terminated.
+2020-01-11T17:11:05+0800 [twisted.scripts._twistd_unix.UnixAppLogger#info] Server Shut Down.
